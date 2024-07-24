@@ -1,21 +1,11 @@
 "use client";
-// every client component also rendered once on the server to generate the initial html
-// import { serverSideFunction } from "@/utils/server-utils";
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-export default function ClientRoutePage() {
+export const ImageSlider = () => {
 	console.log("Client route rendered");
-	// const result = serverSideFunction();
-
-	// return (
-	// 	<>
-	// 		<h1>Client Route Page</h1>
-	// 		{/* <h1>{result}</h1> */}
-	// 	</>
-	// );
 	const settings = {
 		dots: true,
 	   };
